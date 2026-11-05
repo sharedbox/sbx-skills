@@ -1,0 +1,34 @@
+{
+  "name": "sbx-skills",
+  "version": "0.1.0",
+  "description": "Instalador interativo das skills SBX para Claude Code, Codex, Gemini CLI, Antigravity, Copilot, Cursor, OpenCode e Windsurf.",
+  "type": "module",
+  "bin": {
+    "sbx-skills": "bin/sbx-skills.js"
+  },
+  "files": [
+    "bin",
+    "skills"
+  ],
+  "scripts": {
+    "prepack": "node scripts/pack-dotfiles.js",
+    "postpack": "node scripts/pack-dotfiles.js restore",
+    "start": "node bin/sbx-skills.js"
+  },
+  "engines": {
+    "node": ">=18.3"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "skills",
+    "nestjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharedbox/sbx-skills.git"
+  },
+  "license": "MIT"
+}

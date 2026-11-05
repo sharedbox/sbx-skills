@@ -1,0 +1,9 @@
+apiVersion: 1
+providers:
+  - name: api
+    folder: __APP_NAME__
+    type: file
+    disableDeletion: true
+    allowUiUpdates: false
+    options:
+      path: /var/lib/grafana/dashboards
